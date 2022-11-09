@@ -14,13 +14,13 @@ Para realizar o projeto usei uma EC2 instance AWS
 ```yaml
 version: "3.9"
 service:
-	apache:
-		image: httpd:latest
-		container_name: gd_apache_app
-		ports:
-		- "80:80"
-		volumes:
-		- .website:/usr/local/apache2/htdocs
+  apache:
+    image: httpd:latest
+    container_name: gd_apache_app
+    ports:
+    - "80:80"
+    volumes:
+    - .website:/usr/local/apache2/htdocs
 ```
 
 1. Criar novo diretório dentro do diretório do projeto com o nome dado ao volumes no arquivo yml **[website]**
@@ -29,18 +29,18 @@ service:
 
 ```html
 <html>
-	<head>
-		<h1> MEU PROJETO DOCKER!!!</h1>
+  <head>
+    <h1> MEU PROJETO DOCKER!!!</h1>
     <h2> BY GLAUCIO DRUMOND</h2>
-	</head>
-	<body>
-		<div class="header">
-			<div class="container">
-				<h1> Criando um container de uma aplicacao WEB</h1>
-				<div>Cloud DevOps Experience - Banco Carrefour - DIO</div>
-			</div>
-		</div>	
-	</body>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+	<h1> Criando um container de uma aplicacao WEB</h1>
+	<div>Cloud DevOps Experience - Banco Carrefour - DIO</div>
+      </div>
+    </div>	
+  </body>
 </html>
 ```
 
